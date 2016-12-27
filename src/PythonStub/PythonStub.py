@@ -1,5 +1,3 @@
-import sys;
-
-readData = sys.stdin
-print(readData)
+f = open('./workfile', 'w')
+f.write(input());
 
