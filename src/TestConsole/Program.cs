@@ -8,8 +8,16 @@ class Program
     {
         IPlugIn plugIn = new PlugInProxy();
 
-        plugIn.PreRun();
-        plugIn.Run("Hi python!");
-        plugIn.PostRun();
+        plugIn.Init();
+
+        for (int i = 0; i < 3; i++)
+        {
+            plugIn.PreRun();
+            plugIn.Run();
+            plugIn.PostRun();
+        }
+
+        plugIn.Finish();
+        
     }
 }

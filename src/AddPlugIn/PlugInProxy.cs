@@ -13,7 +13,7 @@ namespace AddPlugIn
         {
         }
 
-        public void PreRun()
+        public void Init(object param = null)
         {
             process.StartInfo.FileName = @"C:\Program Files\Python35\python.exe";
             process.StartInfo.Arguments = @"D:\develop\IPCPlugIn4Net\src\PythonStub\PythonStub.py";
@@ -22,16 +22,30 @@ namespace AddPlugIn
             process.StartInfo.RedirectStandardInput = true;
             process.StartInfo.RedirectStandardError = true;
             process.Start();
-            
         }
 
-        public void Run(object param)
+        public void PreRun(object param = null)
         {
-            process.StandardInput.WriteLine(param.ToString());
+            process.StandardInput.WriteLine("pre");
+            Console.WriteLine(process.StandardOutput.ReadLine());
         }
 
-        public void PostRun()
+        public void Run(object param = null)
         {
+            process.StandardInput.WriteLine("run");
+            Console.WriteLine(process.StandardOutput.ReadLine());
+        }
+
+        public void PostRun(object param = null)
+        {
+            process.StandardInput.WriteLine("post");
+            Console.WriteLine(process.StandardOutput.ReadLine());
+        }
+
+        public void Finish(object param = null)
+        {
+            process.StandardInput.WriteLine("q");
+            Console.WriteLine(process.StandardOutput.ReadLine());
             process.WaitForExit();
             process.Dispose();
         }

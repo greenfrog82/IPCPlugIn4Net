@@ -7,11 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "src\TestCons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPCPlugIn", "src\IPCPlugIn\IPCPlugIn.csproj", "{F4308A53-1948-4A7B-B987-4052EE8050E3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET Framework", ".NET Framework", "{5B6FF971-3B78-4753-8336-428301AE6F9B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddPlugInProxy", "src\AddPlugIn\AddPlugInProxy.csproj", "{C473459F-1D38-4895-8082-3CB61BDD8456}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Python", "Python", "{53A891D4-594A-434C-AB64-7867E0679B4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlugInProxy", "src\AddPlugIn\PlugInProxy.csproj", "{C473459F-1D38-4895-8082-3CB61BDD8456}"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonStub", "src\PythonStub\PythonStub.pyproj", "{8EF3A9F3-099C-484A-89C0-D4924DFA0D05}"
 EndProject
@@ -70,8 +66,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{8EF3A9F3-099C-484A-89C0-D4924DFA0D05} = {53A891D4-594A-434C-AB64-7867E0679B4C}
 	EndGlobalSection
 EndGlobal

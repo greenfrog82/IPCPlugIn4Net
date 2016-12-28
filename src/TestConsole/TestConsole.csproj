@@ -11,7 +11,7 @@
     <PackageReference Include="Microsoft.NETCore.App" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AddPlugIn\AddPlugInProxy.csproj" />
+    <ProjectReference Include="..\AddPlugIn\PlugInProxy.csproj" />
     <ProjectReference Include="..\IPCPlugIn\IPCPlugIn.csproj" />
   </ItemGroup>
 </Project>
