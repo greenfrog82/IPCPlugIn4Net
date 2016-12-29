@@ -1,17 +1,16 @@
-﻿using AddPlugIn;
-using IPCPlugIn;
+﻿using IPCPlugIn;
 using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        //IPlugIn plugIn = new PlugInProxy(
-        //        @"C:\Program Files\Python35\python.exe", 
-        //        @"D:\develop\IPCPlugIn4Net\src\PythonStub\PythonStub.py");
+        //IPlugIn plugIn = new PlugInProxy.PlugInProxy(
+        //        @"C:\Program Files\Python35\python.exe",
+        //        @"D:\develop\IPCPlugIn4Net\src\PlugIn\PythonEchoPlugIn\PythonStub.py");
 
-        IPlugIn plugIn = new PlugInProxy(
-                @"D:\develop\IPCPlugIn4Net\DotNetStub\bin\Debug\DotNetStub.exe",
+        IPlugIn plugIn = new PlugInProxy.PlugInProxy(
+                @"D:\develop\IPCPlugIn4Net\src\PlugInBase\DotNetStub\bin\Debug\DotNetStub.exe",
                 null);
 
         for (int i = 0; i < 3; i++)

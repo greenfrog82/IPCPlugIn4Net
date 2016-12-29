@@ -3,7 +3,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 
-namespace AddPlugIn
+namespace PlugInProxy
 {
     public class PlugInProxy : IPlugIn
     {
