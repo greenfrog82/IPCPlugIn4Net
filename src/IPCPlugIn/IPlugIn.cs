@@ -6,8 +6,6 @@ namespace IPCPlugIn
 {
     public interface IPlugIn
     {
-        void Init(object param = null);
-
         void PreRun(object param = null);
 
         void Run(object param = null);

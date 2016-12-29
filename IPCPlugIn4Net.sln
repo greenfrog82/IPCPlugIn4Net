@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlugInProxy", "src\AddPlugI
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonStub", "src\PythonStub\PythonStub.pyproj", "{8EF3A9F3-099C-484A-89C0-D4924DFA0D05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetStub", "DotNetStub\DotNetStub.csproj", "{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,18 @@ Global
 		{8EF3A9F3-099C-484A-89C0-D4924DFA0D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EF3A9F3-099C-484A-89C0-D4924DFA0D05}.Release|x64.ActiveCfg = Release|Any CPU
 		{8EF3A9F3-099C-484A-89C0-D4924DFA0D05}.Release|x86.ActiveCfg = Release|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Debug|x64.Build.0 = Debug|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Debug|x86.Build.0 = Debug|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Release|x64.ActiveCfg = Release|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Release|x64.Build.0 = Release|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Release|x86.ActiveCfg = Release|Any CPU
+		{0A6D5714-05E5-41EA-AE9F-4ECFFEEEAD38}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

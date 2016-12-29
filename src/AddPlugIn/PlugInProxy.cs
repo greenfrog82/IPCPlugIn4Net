@@ -9,14 +9,12 @@ namespace AddPlugIn
     {
         Process process = new Process();
 
-        public PlugInProxy()
+        public PlugInProxy(string executorFilePath, string arguments)
         {
-        }
-
-        public void Init(object param = null)
-        {
-            process.StartInfo.FileName = @"C:\Program Files\Python35\python.exe";
-            process.StartInfo.Arguments = @"D:\develop\IPCPlugIn4Net\src\PythonStub\PythonStub.py";
+            //process.StartInfo.FileName = @"C:\Program Files\Python35\python.exe";
+            //process.StartInfo.Arguments = @"D:\develop\IPCPlugIn4Net\src\PythonStub\PythonStub.py";
+            process.StartInfo.FileName = executorFilePath;
+            process.StartInfo.Arguments = arguments;
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardOutput = true;
             process.StartInfo.RedirectStandardInput = true;
