@@ -1,4 +1,5 @@
 ﻿using DotNetPlugIn;
+using DotNetVO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
@@ -13,17 +14,26 @@ namespace DotNetEchoPlugIn
     {
         public void PreRun(object param = null)
         {
-            Console.WriteLine(param);
+            Param objParam = param as Param;
+            System.Diagnostics.Debug.Assert(null != objParam);
+
+            Console.WriteLine(objParam.PreRun);
         }
 
         public void Run(object param = null)
         {
-            Console.WriteLine(param);
+            Param objParam = param as Param;
+            System.Diagnostics.Debug.Assert(null != objParam);
+
+            Console.WriteLine(objParam.Run);
         }
 
         public void PostRun(object param = null)
         {
-            Console.WriteLine(param);
+            Param objParam = param as Param;
+            System.Diagnostics.Debug.Assert(null != objParam);
+
+            Console.WriteLine(objParam.PostRun);
         }
     }
 }

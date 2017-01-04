@@ -1,0 +1,5 @@
+﻿{
+  "pre_run": "PreRun",
+  "run": "Run",
+  "post_run":  "PostRun"
+}

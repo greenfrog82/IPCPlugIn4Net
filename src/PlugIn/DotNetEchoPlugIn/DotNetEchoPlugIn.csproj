@@ -45,9 +45,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PlugInBase\DotNetPlugIn\DotNetPlugIn.csproj">
+    <ProjectReference Include="..\..\PlugInBase\DotNet\DotNetPlugIn\DotNetPlugIn.csproj">
       <Project>{856ac890-5a6b-4cf7-838f-111b804a98ad}</Project>
       <Name>DotNetPlugIn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PlugInBase\DotNet\DotNetStub\DotNetStub.csproj">
+      <Project>{0a6d5714-05e5-41ea-ae9f-4ecffeeead38}</Project>
+      <Name>DotNetStub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PlugInBase\DotNet\DotNetVO\DotNetVO.csproj">
+      <Project>{0e7b055f-2dfe-43a4-8073-80f9ca5da680}</Project>
+      <Name>DotNetVO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

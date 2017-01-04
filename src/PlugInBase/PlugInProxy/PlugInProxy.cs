@@ -24,19 +24,19 @@ namespace PlugInProxy
 
         public void PreRun(object param = null)
         {
-            process.StandardInput.WriteLine("pre");
+            process.StandardInput.WriteLine("pre:" + param);
             Console.WriteLine(process.StandardOutput.ReadLine());
         }
 
         public void Run(object param = null)
         {
-            process.StandardInput.WriteLine("run");
+            process.StandardInput.WriteLine("run:" + param);
             Console.WriteLine(process.StandardOutput.ReadLine());
         }
 
         public void PostRun(object param = null)
         {
-            process.StandardInput.WriteLine("post");
+            process.StandardInput.WriteLine("post:" + param);
             Console.WriteLine(process.StandardOutput.ReadLine());
         }
 
